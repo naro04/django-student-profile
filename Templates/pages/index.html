@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffeef5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .card {
+            max-width: 450px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #f7cfe1;
+            box-shadow: 0 3px 10px rgba(255, 170, 200, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 24px;
+            color: #cc2e72;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: normal;
+            color: #aa6b86;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            margin-bottom: 12px;
+            background: #fff5fa;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #f7cfe1;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #b83b6f;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .value {
+            color: #333;
+        }
+
+        a {
+            color: #cc2e72;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #b45d7a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>{{ full_name }}</h1>
+    <h2>{{ university }} – {{ major }}</h2>
+
+    <div class="row">
+        <span class="label">Student ID:</span>
+        <span class="value">{{ student_id }}</span>
+    </div>
+
+    <div class="row">
+        <span class="label">Address:</span>
+        <span class="value">{{ address }}</span>
+    </div>
+
+    <div class="row">
+        <span class="label">Email:</span>
+        <span class="value">
+            <a href="mailto:{{ email }}">{{ email }}</a>
+        </span>
+    </div>
+
+    <div class="footer">Designed by Noor Aljourani - Django Template</div>
+
+</div>
+
+</body>
+</html>
