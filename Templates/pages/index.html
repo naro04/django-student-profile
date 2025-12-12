@@ -82,10 +82,11 @@
     <h1>{{ full_name|capfirst|add:last_name }}</h1>
     <h2>{{ university }} – {{ major }}</h2>
 
-    <div class="row">
-        <span class="value">{{ student_id|stringformat:"s" }}</span>
-        <span class="value">{{ student_id }}</span>
-    </div>
+<div class="row">
+    <span class="label">Student ID:</span>
+    <span class="value">{{ student_id|stringformat:"s" }}</span>
+</div>
+
 
     <div class="row">
         <span class="label">Address:</span>
